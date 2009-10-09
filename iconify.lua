@@ -16,7 +16,6 @@ local function iconify(link)
 end
 
 local function addMessage(self, text, ...)
-	gMessage = text
 	text = text:gsub("(|c%x+|H.-|h|r)", iconify)
 	return _addMessage(self, text, ...)
 end
